@@ -47,11 +47,11 @@ $receiver.oncode "40" do #down-right
 end
 
 $receiver.oncode "05" do #speed up
-  $speed = $speed+1
+  $speed = $speed+1 if $speed < 100
 end
 
 $receiver.oncode "06" do #slow down
-  $speed = $speed-1
+  $speed = $speed-1 if $speed > 1
 end
 
 $receiver.oncode "41" do |h| #left click
