@@ -58,6 +58,10 @@ $receiver.oncode "41" do |h| #left click
   click_left if h == 0
 end
 
+$receiver.oncode "1B" do |h| #left click
+  click_left if h == 0
+end
+
 $receiver.oncode "42" do |h| #right click
   click_right if h == 0
 end
