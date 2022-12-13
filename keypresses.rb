@@ -54,7 +54,7 @@ $receiver.oncode "06" do #slow down
   $speed = $speed-1 if $speed > 1
 end
 
-$receiver.oncode "41" do |h| #left click
+$receiver.oncode "15" do |h| #left click
   click_left if h == 0
 end
 
@@ -62,10 +62,10 @@ $receiver.oncode "1B" do |h| #left click
   click_left if h == 0
 end
 
-$receiver.oncode "42" do |h| #right click
+$receiver.oncode "19" do |h| #right click
   click_right if h == 0
 end
 
-$receiver.oncode "43" do |h| #hold
+$receiver.oncode "1D" do |h| #hold
   toggle_hold if h == 0
 end
